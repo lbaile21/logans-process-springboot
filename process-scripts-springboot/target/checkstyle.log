@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.34">
+<file name="/home/logan/Desktop/kogito-proj/logans-process-springboot/process-scripts-springboot/src/main/java/org/bam/deployers/springboot/newProjBPMN.java">
+<error line="1" severity="error" message="Line does not match expected header line of &apos;^\/\*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+<file name="/home/logan/Desktop/kogito-proj/logans-process-springboot/process-scripts-springboot/src/main/java/org/bam/deployers/services/deployBPMNService.java">
+<error line="1" severity="error" message="Line does not match expected header line of &apos;^\/\*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+<file name="/home/logan/Desktop/kogito-proj/logans-process-springboot/process-scripts-springboot/src/main/java/org/kie/kogito/tests/KogitoInfinispanSpringbootApplication.java">
+</file>
+<file name="/home/logan/Desktop/kogito-proj/logans-process-springboot/process-scripts-springboot/src/test/java/org/acme/travels/springboot/ScriptsProcessTest.java">
+</file>
+<file name="/home/logan/Desktop/kogito-proj/logans-process-springboot/process-scripts-springboot/src/main/resources/application.properties">
+</file>
+</checkstyle>
