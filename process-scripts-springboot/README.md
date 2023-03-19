@@ -2,25 +2,8 @@
 
 ## Description
 
-A quickstart project is the simplest hello world kind of example, it accepts input and replies with hello message.
+Project for receiveing Name, Email, and AI generated XML for managing Process and Decisions App Deployment.
 
-This example shows
-
-- invoking scripts from within process
-
-<p align="center"><img width=75% height=50% src="docs/images/process.png"></p>
-
-- Diagram Properties (top)
-<p align="center"><img src="docs/images/diagramProperties.png"></p>
-
-- Diagram Properties (bottom)
-<p align="center"><img src="docs/images/diagramProperties2.png"></p>
-
-- Hello Script Task
-<p align="center"><img src="docs/images/sayHelloScriptTask.png"></p>
-
-- Update Message Script Task
-<p align="center"><img src="docs/images/updateMessageScriptTask.png"></p>
 
 ## Build and run
 
@@ -80,13 +63,16 @@ Response should be similar to:
 {
   "id": "ab5239e2-f497-4684-b337-5a44440b38dd",
   "bpmn": "<bpmn>"
+  "firstName": "Logan"
+  "lastName": "IO"
+  "email": "logan.io@devland.org"
 }
 ```
 
 And also in SpringBoot log you should see a log entry:
 
 ```
-Here is your BPMN <bpmn>
+Hey Logam IO here is your BPMN <bpmn>
 ```
 
 ## Deploying with Kogito Operator
