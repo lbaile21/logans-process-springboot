@@ -10,8 +10,8 @@ spec:
   #- name: MY_CUSTOM_ENV
   #  value: "my value"
   gitSource:
-    contextDir: kogito-quarkus-examples/process-scripts-springboot
-    uri: 'https://github.com/kiegroup/kogito-examples'
+    contextDir: logans-process-springboot/process-scripts-springboot
+    uri: "https://github.com/lbaile21/logans-process-springboot/tree/main/process-scripts-springboot"
   # set your maven nexus repository to speed up the build time
   #mavenMirrorURL:
 ---

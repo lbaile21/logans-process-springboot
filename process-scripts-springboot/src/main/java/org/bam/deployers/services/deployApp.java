@@ -13,24 +13,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.kie.kogito.tests;
+package org.bam.deployers.services;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.client.RestTemplateBuilder;
-import org.springframework.context.annotation.Bean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
-@SpringBootApplication(scanBasePackages = { "org.kie.kogito.**", "org.bam.deployers.**" })
-public class KogitoInfinispanSpringbootApplication {
+@Component
+public class deployApp {
 
-    public static void main(String[] args) {
-        SpringApplication.run(KogitoInfinispanSpringbootApplication.class, args);
-    }
+    @Autowired
+    private RestTemplate restTemplate;
 
-    @Bean
-    public RestTemplate restTemplate(RestTemplateBuilder builder) {
-        return builder.build();
+    public boolean get(String myBPMN) {
+
+        try {
+            restTemplate.getForObject("http://localhost:3000/deploy-server", boolean.class);
+            System.out.println("Reponse Successful");
+            return true;
+        } catch (RestClientException e) {
+            System.out.println("Response error");
+            return false;
+        }
     }
 
 }

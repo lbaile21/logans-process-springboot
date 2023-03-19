@@ -71,7 +71,7 @@ To make use of this application it is as simple as putting a sending request to 
 Complete curl command can be found below:
 
 ```sh
-curl -X POST -H 'Content-Type:application/json' -H 'Accept:application/json' -d '{"bpmn" : "<bpmn>"}' http://localhost:8080/scripts
+curl -X POST -H 'Content-Type:application/json' -H 'Accept:application/json' -d '{"firstName" : "Logan", "lastName" : "IO", "email": "logan.io@devland.org", "bpmn" : "<bpmn>"}' http://localhost:8080/script
 ```
 
 Response should be similar to:
